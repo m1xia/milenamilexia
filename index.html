@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-predefined-style="true" data-css-presets="true" data-css-preset data-typography-preset>
+  <head>
+    <meta charset="UTF-8">
+    <title>MILENA MILEXIA</title>
+        <link rel="icon" type="image/png" href="./data/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Gaegu&family=MuseoModerno&display=swap" rel="stylesheet">
+        
+      
+        
+       
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+
+
+ 
+
+
+
+  </head>
+  
+  <body>
+        <customhtml>
+            <div class="vertical"></div>
+                <script>
+                   (function titleScroller(text) {
+                     document.title = text;
+                      console.log(text);
+                      setTimeout(function() {
+                        titleScroller(text.substr(1) + text.substr(0, 1));
+                      }, 500);
+                    }("  MILENA MILEXIA "));
+                </script>
+        </customhtml>
+
+         
+        <div class="main">
+          <div class="back"></div>
+            
+                                                     
+                        <div class="sidemenu">
+                          
+                          <div class="caja" id="ini"><a href="index.html">Inicio</a>
+                          </div>
+                        
+                          <div class="caja" id="porta"><a href="portafolio.html">Portafolio</a>
+                          </div>
+                        
+                          <div class="caja" id="stat"> <a href="statement.html">Statement</a>
+                          </div>
+                        
+                          <div id="caja">
+                            <div class="contact">
+                              <h2>Contacto</h2>
+                              <a id="correo" href="mailto:milenameza.xia@gmail.com">milenameza.xia@gmail.com</a><br>
+                              <a href="https://www.instagram.com/mile.xia_/"  target="_blank">@mile.xia_</a>
+                            </div>
+                        
+                          </div>
+                          <h2 id="h2">{MILENA MILEXIA}</h2>
+                        
+                        </div>
+
+
+                                       
+                        
+                        
+
+                          <div class="contenido">
+                              <div id="inicio" class="banner">
+                            
+                                        <nav>
+                                          <div id="item-1">Sobre mi</div>
+                                          
+                                        </nav>
+
+                                        <footer>
+                                          <div id="item-2">Lo que hago</div>
+                                          
+                                        </footer>
+
+
+                                                
+                                        <div class="header">  
+                                          <div class="placeholder">  
+                                                
+                                            <div class="random">
+                                            <img src="./data/logo.png" alt="" class="follow-img">
+
+                                                                                          
+                                              <div class="r1">
+                                        
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        
+                                              </div>
+                                              
+
+                                              <div class="r2">
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+                                        <span class="nbr ltr">0</span>
+
+
+                                              
+                                              </div>
+                                             
+
+                                              
+                                            </div>
+                                             
+                                                  
+
+                                                  
+                                      
+                                                  <script type="text/javascript">
+                                          $(document).ready(function () {
+          
+                                            var $randomnbr = $('.nbr');
+                                            var $timer = 22;
+                                            var $it;
+                                            var $data = 0;
+                                            var index;
+                                            var change;
+                                            var letters = ["M", "I", "L", "E", "N", "A", "M", "I", "L", "E", "X", "I", "A"];
+          
+                                            $randomnbr.each(function () {
+          
+                                              change = Math.round(Math.random() * 150);
+                                              $(this).attr('data-change', change);
+          
+                                            });
+          
+                                            function random() {
+                                              return Math.round(Math.random() * 9);
+                                            };
+          
+                                            function select() {
+                                              return Math.round(Math.random() * $randomnbr.length + 1);
+                                            };
+          
+                                            function value() {
+                                              $('.nbr:nth-child(' + select() + ')').html('' + random() + '');
+                                              $('.nbr:nth-child(' + select() + ')').attr('data-number', $data);
+                                              $data++;
+          
+                                              $randomnbr.each(function () {
+                                                if (parseInt($(this).attr('data-number')) > parseInt($(this).attr('data-change'))) {
+                                                  index = $('.ltr').index(this);
+                                                  $(this).html(letters[index]);
+                                                  $(this).removeClass('nbr');
+                                                }
+                                              });
+                                            };
+          
+                                            $it = setInterval(value, $timer);
+          
+                                          });
+          
+                                                  </script>                               
+                                          </div>      
+                                          <p id="subheader">✩₊˚.⋆☾⋆⁺₊✧Artista✩₊˚.⋆☾⋆⁺₊✧</p>
+                                        </div>    
+
+                                    
+                              </div>
+
+                            </div>
+
+                            
+                                                    
+                                                    
+                                                    
+          </div>                             
+                                                
+        </div>                
+        
+
+
+                       
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
+     <script src="java.js" type="text/javascript"></script>
+     <script type="text/javascript">
+                              var windowWidth = $(window).width();
+                              $('.main').mousemove(function(event){
+
+                                var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+                                var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
+                                $('.back').css('margin-left', moveX + 'px');
+                                $ ('.back').css ('margin-top', moveY + 'px'); 
+                              });
+                            </script>
+    </body>
+</html>

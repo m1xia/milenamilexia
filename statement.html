@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-predefined-style="true" data-css-presets="true" data-css-preset data-typography-preset>
+  <head>
+    <meta charset="UTF-8">
+    <title>MILENA MILEXIA</title>
+        <link rel="icon" type="image/png" href="./data/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Gaegu&family=MuseoModerno&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">        
+       
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+
+<style>
+.ba{
+    width: 100vw;
+    height: 100vh;
+    z-index: -10000;
+    position: fixed;
+    background: radial-gradient(#d1d1d100, #ff00d446, #98fdbfad );
+    background-size: 200% 200%;
+    animation: color 12s ease-in-out infinite;
+
+    margin: 0;
+       
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+
+  .contenido{
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    z-index: 2;
+    margin-right: 25%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar{
+  display: none;
+}
+
+  h1{
+    color: #fff;
+    font-size: 4rem;
+    margin: 3rem;
+    padding: 1rem;
+    margin-left: 33%;
+  }
+
+  .contenido .text{
+    margin-left: 25%;
+    padding: 8rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    position: relative;
+    font-size: clamp (20px, 5vw, 70px);
+    
+  }
+
+  span{
+    opacity: .1;
+  }
+
+  
+
+  
+
+  
+
+ 
+
+</style>
+ 
+
+
+
+  </head>
+  
+  <body>
+        <customhtml>
+            <div class="vertical"></div>
+                <script>
+                   (function titleScroller(text) {
+                     document.title = text;
+                      console.log(text);
+                      setTimeout(function() {
+                        titleScroller(text.substr(1) + text.substr(0, 1));
+                      }, 500);
+                    }("  MILENA MILEXIA "));
+                </script>
+        </customhtml>
+
+         
+        <div class="main">
+          <div class="back"></div>
+            
+                                                     
+                        <div class="sidemenu">
+                          <h2 id="h2">{MILENA MILEXIA}</h2>
+                          <div class="caja" id="ini"><a href="index.html">Inicio</a>
+                          </div>
+                        
+                          <div class="caja" id="porta"><a href="portafolio.html">Portafolio</a>
+                          </div>
+                        
+                          <div class="caja" id="stat"> <a href="statement.html">Statement</a>
+                          </div>
+                        
+                          <div id="caja">
+                            <div class="contact">
+                              <h2>Contacto</h2>
+                              <a id="correo" href="mailto:milenameza.xia@gmail.com">milenameza.xia@gmail.com</a><br>
+                              <a href="https://www.instagram.com/mile.xia_/"  target="_blank">@mile.xia_</a>
+                            </div>
+                        
+                          </div>
+                        
+                        
+                        </div>
+
+
+                        <div class="contenido"> <div class="ba"></div>
+
+                            <h1>MM: Statement</h1>
+                           <p class="text" >
+                            A través de composiciones híbridas entre naturaleza y tecnología, busco crear diálogos que desdibujen los límites entre lo natural y lo 
+                            artificial; lo orgánico y lo mecánico. Me atrae la posibilidad de explorar nuevas dimensiones de la realidad mediante la combinación de 
+                            materiales aparentemente dispares. Lo que busco en mis investigaciones es resaltar la liminalidad entre lo que conocemos y las nuevas 
+                            posibilidades sobre ello.
+                           </p>
+
+                           <p class="text">
+                            Mis piezas se crean utilizando una variedad de materiales, incluidos objetos encontrados, materiales reciclados y componentes electrónicos. 
+                            Al jugar con los límites de nuestra interacción con lo "real", requiero crear un espacio-tiempo arquitectónicamente digital que espero pueda 
+                            inspirar a los espectadores a contemplar su propia relación con el mundo que los rodea -especialmente en nuestro tiempo contemporáneo donde más que nunca creo que el arte debe ser estimulante y atractivo.
+                           </p>
+
+                           <p class="text">
+                            Mi proceso creativo está basado en mi temprano acercamiento a la fantasía y la ciencia ficción, mundos que contrastaban con peculiares 
+                            experiencias espaciales en diferentes geografías. De esta manera puedo explorar conceptos como los paisajes liminales, hibridación, 
+                            utopías y simulación. Esto a menudo implica también el manejo de distintas disciplinas que incluyen la composición sonora -lo cual añade 
+                            un aspecto inmersivo a las experiencias que busco generar-, empujando los límites de lo que es posible con los medios que elijo y, por 
+                            tanto, desafiándome constantemente como artista.
+                           </p>
+
+                           
+                        </div>
+
+                            
+                                                    
+                                                    
+                                                    
+                                               
+                                                
+        </div>                
+        
+
+        <script type="text/javascript">
+            var windowWidth = $(window).width();
+            $('.main').mousemove(function(event){
+
+              var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+              var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
+              $('.back').css('margin-left', moveX + 'px');
+              $ ('.back').css ('margin-top', moveY + 'px'); 
+            });
+          </script>
+
+          
+          <script type="text/javascript">
+            let paragraphs = [...document.querySelectorAll('.text')];
+            let spans = [];
+
+            paragraphs.forEach(paragraph => {
+              let htmlString = '';
+              let pArray = paragraph.textContent.split('');
+
+              for (let i = 0; i < pArray.length; i++) {
+                htmlString += `<span>${pArray[i]}</span>`;
+    }
+
+               paragraph.innerHTML = htmlString;
+             });
+
+            spans = [...document.querySelectorAll('span')];
+            
+
+
+
+function revealSpans() {
+    for (let i = 0; i < spans.length; i++) {
+        if (spans[i].parentElement.getBoundingClientRect().top < window.innerHeight / 2) {
+            let { left, top } = spans[i].getBoundingClientRect();
+            top = top - (window.innerHeight * 0.2);
+
+            let opacityValue = 1 - ((top * 0.01) + (left * 0.001))< 0.1 ? 0.1 : 1 - ((top + 0.01) + (left + 0.001)).toFixed(3);
+            opacityValue = opacityValue < 1 ? 1 : opacityValue.toFixed(3);
+            
+            spans[i].style.opacity = opacityValue;
+        }
+    }
+}
+
+window.addEventListener('scroll', () => {
+    revealSpans()
+})
+revealSpans()
+
+          </script>             
+     
+    </body>
+</html>
